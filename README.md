@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GPX Demon GR250 | High-End Scrollytelling Experience
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://gpx-bike-co.vercel.app/)
 
-First, run the development server:
+A cinematic, interactive web experience designed for the **GPX Demon GR250**. This landing page leverages modern web technologies to create a high-performance scrollytelling narrative, featuring a scroll-synced image sequence that brings the motorcycle to life.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![GPX Demon GR250 Hero Section](./public/screenshots/hero-section.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Interactive Canvas Sequence**: A smooth 40-frame image sequence that reacts precisely to your scroll position.
+- **Cinematic Visuals**: Dark-themed aesthetic (#050505) with studio-grade lighting and minimalist typography.
+- **Smooth Scrollytelling**: Powered by **Lenis** for buttery-smooth scrolling across all devices.
+- **Reactive Headlines**: Dynamic text beats that appear and disappear based on the bike's assembly state.
+- **Performance Optimized**: Preloaded image frames rendered on HTML5 Canvas for high FPS interaction.
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Smooth Scroll**: [Lenis](https://github.com/darkroomengineering/lenis)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Canvas API**: For efficient frame-by-frame rendering.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sahidDev09/Gpx-bike-co.git
+   cd Gpx-bike-co
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 📸 Preview
+
+The experience starts with a full-view of the **GPX Demon GR250** and its "Pure Street Power" ethos. As you scroll, the bike sequence animates forward and backward, creating a tactile sense of depth and engineering precision.
+
+---
+
+Built with ❤️ for the GPX community.

@@ -24,12 +24,12 @@ export default function TextBeats({ scrollYProgress }: TextBeatsProps) {
   const scaleFinal = useTransform(scrollYProgress, [0.85, 1], [0.9, 1]);
 
   return (
-    <div className="absolute inset-0 pointer-events-none w-full h-full max-w-[1400px] mx-auto px-6 md:px-12">
+    <div className="absolute inset-0 pointer-events-none w-full h-full">
       
       {/* 0% - Hero */}
       <motion.div 
         style={{ opacity: opacityIntro, y: yIntro }}
-        className="absolute top-1/2 left-0 right-0 -translate-y-1/2 text-center z-20"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-6 md:px-12"
       >
         <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white/90 mb-4 drop-shadow-2xl">
           GPX Demon GR250
@@ -42,7 +42,7 @@ export default function TextBeats({ scrollYProgress }: TextBeatsProps) {
       {/* 30% - Precision Engineering */}
       <motion.div 
         style={{ opacity: opacityEng, x: xEng }}
-        className="absolute top-1/3 left-6 md:left-24 max-w-md z-20"
+        className="absolute top-1/3 left-6 md:left-12 lg:left-24 max-w-md z-20"
       >
         <h2 className="text-4xl md:text-6xl font-bold text-white/90 leading-tight">
           Precision<br/>Engineering
@@ -57,7 +57,7 @@ export default function TextBeats({ scrollYProgress }: TextBeatsProps) {
       {/* 60% - Engine Reveal */}
       <motion.div 
         style={{ opacity: opacityPerf, x: xPerf }}
-        className="absolute top-1/3 right-6 md:right-24 max-w-md text-right z-20 flex flex-col items-end"
+        className="absolute top-1/3 right-6 md:right-12 lg:right-24 max-w-md text-right z-20 flex flex-col items-end"
       >
         <h2 className="text-4xl md:text-6xl font-bold text-white/90 leading-tight">
           Liquid-Cooled<br/>Performance
@@ -72,7 +72,7 @@ export default function TextBeats({ scrollYProgress }: TextBeatsProps) {
       {/* 90% - Final CTA */}
       <motion.div 
         style={{ opacity: opacityFinal, scale: scaleFinal }}
-        className="absolute bottom-32 left-0 right-0 text-center z-20"
+        className="absolute bottom-32 left-1/2 -translate-x-1/2 text-center z-20 w-full px-6 md:px-12"
       >
         <h2 className="text-6xl md:text-9xl font-black text-white px-4">
           RIDE EVERYTHING.
