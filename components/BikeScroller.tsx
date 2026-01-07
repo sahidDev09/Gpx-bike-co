@@ -89,8 +89,8 @@ export default function BikeScroller({ scrollYProgress }: BikeScrollerProps) {
   }, [imagesLoaded]);
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center pointer-events-none select-none">
-      <div className="relative w-full max-w-[1400px] aspect-[16/9] flex items-center justify-center">
+    <div className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none select-none">
+      <div className="relative w-full h-full flex items-center justify-center">
         {!imagesLoaded && (
           <div className="text-white/20 text-sm font-mono animate-pulse">
             LOADING SEQUENCE...
@@ -98,11 +98,11 @@ export default function BikeScroller({ scrollYProgress }: BikeScrollerProps) {
         )}
         <canvas
           ref={canvasRef}
-          className={`object-contain w-full h-full transition-opacity duration-500 ${imagesLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`object-cover w-full h-full transition-opacity duration-500 ${imagesLoaded ? 'opacity-100' : 'opacity-0'}`}
         />
         
         {/* Cinematic Glow/Vignette Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505] opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505] opacity-20 pointer-events-none" />
       </div>
     </div>
   );
